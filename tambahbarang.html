@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dancing Crab Indonesia</title>
+
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="css/tambahbarang.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<img src="assets/logo.png" style="vertical-align: middle;" width="3%" onclick="location.href='home.html'">
+		<center>
+		<div id="navigation"><a href="pemesanan.php">Pemesanan Barang</a></div>
+		<div id="navigation"><a href="penerimaan.php">Penerimaan Barang</a></div>
+		<div id="navigation"><a href="pembayaran.php">Pembayaran Barang</a></div>
+		<div id="navigation"><a href="stok.php">Stok Barang</a></div>
+		<div id="navigation"><a href="laporan.php">Laporan Keuangan</a></div>
+		</center>
+	</nav>
+
+	<div id="title">Tambah Barang</div>
+	
+	<section class="form-section">
+		<div class="form">
+			<form name="addbarang" action="addbarang.php" method="post">
+				Nama Barang <br>
+				<input type="text" name="Nama_Barang" style="width: 600px;">
+				<br>
+				Kemasan <br>
+				<input type="text" name="Kemasan" style="width: 600px;">
+				<br>
+				Harga <br>
+				<input type="number" name="Harga" style="width: 600px;">
+				<br>
+				Jumlah <br>
+				<input type="number" name="Jumlah" style="width: 600px;">
+				<br>
+				Kategori <br>
+				<select name="Kategori" id="dropdown">
+					<option disabled selected value>-- Pilih Kategori --</option>
+					<option value="Groceries">Groceries</option>
+					<option value="Miscellaneous">Miscellaneous</option>
+					<option value="Perishables">Perishables</option>
+				</select>
+				<br>
+				<div style="float: right;">
+					<input type="submit" value="Tambah" class="buttonadd">
+				</div>
+			</form>
+		<br><br><br><br>
+
+	</section>
+
+
+	<div class="footer">
+		Copyright © 2017 Dancing Crab Indonesia
+	</div>
+
+	
+</body>
+</html>
